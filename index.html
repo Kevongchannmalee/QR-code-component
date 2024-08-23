@@ -9,20 +9,58 @@
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    body{
+      margin: 0;
+      height: 100lvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(212, 45%, 89%);
+    }
+    .card{
+      box-shadow: 2px 2px 10px rgb(110, 110, 110);
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      padding: 20px;
+      background-color: hsl(0, 0%, 100%);
+    }
+    .card img{
+      border-radius: 10px;
+    }
+    h1{
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: hsl(218, 44%, 22%);
+    }
+    p{
+      font-family: "Outfit", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      color: hsl(216, 15%, 48%);
+    }
+    .attribution { font-size: 11px; text-align: center; margin: 50px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="QR image">
+    <h1>Improve your front-end skills by building projects</h1>
+    <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ke Vongchannmalee</a>.
   </div>
 </body>
 </html>
